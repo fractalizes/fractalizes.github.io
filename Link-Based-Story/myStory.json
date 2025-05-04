@@ -1,0 +1,133 @@
+{
+    "Title": "The Sandwich Crave",
+    "Credits": "Created by Ian Bunsirisert (ibunsiri@ucsc.edu)",
+    "InitialLocation": "Kitchen",
+    "Locations": {
+        "Kitchen": {
+            "Body": "It's 4PM on a Friday and you've been craving for a sandwich all week. You decide to either go to the supermarket to buy your sandwich or go to the pantry and create the sandwich yourself.",
+            "Choices": [
+                {
+                    "Text": "Head to the supermarket",
+                    "Target": "Supermarket"
+                },
+                {
+                    "Text": "Go to your pantry",
+                    "Target": "Pantry"
+                }
+            ]
+        },
+        "Kitchen Collected": {
+            "Body": "After a grueling journey, you head to the pantry to finally complete your sandwich.",
+            "Choices": [
+                {
+                    "Text": "Create your sandwich at the pantry",
+                    "Target": "Pantry Collected"
+                }
+            ]
+        },
+        "Supermarket": {
+            "Body": "You are at the front of the supermarket. Well, time to get your ingredients!",
+            "Choices": [
+                {
+                    "Text": "Head to the bakery section",
+                    "Target": "Bakery"
+                },
+                {
+                    "Text": "Go to the deli section",
+                    "Target": "Deli"
+                },
+                {
+                    "Text": "Search through the produce section",
+                    "Target": "Produce"
+                },
+                {
+                    "Text": "Go back home",
+                    "Target": "Kitchen Collected"
+                }
+            ]
+        },
+        "Bakery": {
+            "Body": "You pick up your slightly expired bread and rush out. There is no time to explain or waste!",
+            "Choices": [
+                {
+                    "Text": "Head back to the front",
+                    "Target": "Supermarket"
+                }
+            ]
+        },
+        "Deli": {
+            "Body": "You hurry to the deli section, only to be halted by a large line of people. There is no way there are this many people also craving for a sandwich, right?",
+            "Choices": [
+                {
+                    "Text": "Wait in line",
+                    "Target": "Wait Line"
+                },
+                {
+                    "Text": "Cut in front",
+                    "Target": "Cut Line"
+                },
+                {
+                    "Text": "Head back to the front",
+                    "Target": "Supermarket"
+                }
+            ]
+        },
+        "Wait Line": {
+            "Body": "You decide to wait in line. After an eternity, you notice that the line has barely moved. Now is not the time, you need the ham for your sandwich now!",
+            "Choices": [
+                {
+                    "Text": "Cut the line",
+                    "Target": "Cut Line"
+                },
+                {
+                    "Text": "Head back to the front",
+                    "Target": "Supermarket"
+                }
+            ]
+        },
+        "Cut Line": {
+            "Body": "You take your chance and cut in front of everybody! Despite the angry mob you have spawned, you are able to get your ham and get out of there!",
+            "Choices": [
+                {
+                    "Text": "Hurrily run back to the front",
+                    "Target": "Supermarket"
+                }
+            ]
+        },
+        "Produce": {
+            "Body": "After scouring around for lettuce, you have no luck. As you head back to the front, you see an unattended shopping cart with the tomatoes you need. Do you take the tomatoes while nobody is around?",
+            "Choices": [
+                {
+                    "Text": "Snatch the tomatoes",
+                    "Target": "Shopping Cart"
+                },
+                {
+                    "Text": "Head back to the front",
+                    "Target": "Supermarket"
+                }
+            ]
+        },
+        "Shopping Cart": {
+            "Body": "Sneakily, you take your opportunity and snatch the tomatoes for yourself.",
+            "Choices": [
+                {
+                    "Text": "Scurry back to front",
+                    "Target": "Supermarket"
+                }
+            ]
+        },
+        "Pantry": {
+            "Body": "You check through your pantry for ingredients, only to realize that you ran out a while ago. The only thing you have left is expired bread, and of course you aren't going to use expired bread for this glorious sandwich! You grab your car keys and your wallet and decide to head to the supermarket to buy your ingredients.",
+            "Choices": [
+                {
+                    "Text": "Return to kitchen",
+                    "Target": "Kitchen"
+                }
+            ]
+        },
+        "Pantry Collected": {
+            "Body": "As you bite into your sandwich, you think about everything you did today to create this sandwich. All the selfish, outrageous, and downright diabolical actions you took just to create this sandwich. But hey, it was worth it, right? Yeah, it totally was! The moral of the story? Don't let ANYONE get in the way of your sandwich cravings!",
+            "Choices": []
+        }
+    }
+}
